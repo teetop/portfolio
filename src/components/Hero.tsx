@@ -41,9 +41,9 @@ const Hero = () => {
     },
      { 
       icon: Zap, 
-      value: "$100M+", 
-      label: "Total Value Locked", 
-      description: "Across protocols I've architected",
+      value: "10+", 
+      label: "DApps built", 
+      description: "Across different protocols",
       color: "from-yellow-400 via-orange-400 to-red-500",
       delay: "0s"
     }
