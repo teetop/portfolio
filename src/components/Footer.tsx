@@ -31,7 +31,7 @@ function Footer() {
                   Made with <Heart size={16} className="text-red-500" /> by Michael Dean Oyewole
                 </p>
                 <p className="text-gray-400 text-sm mt-1">
-                  © 2025 ERI. Empowering trust through decentralized solutions.
+                  © {new Date().getFullYear()}  ERI.
                 </p>
               </div>
             </div>
