@@ -180,12 +180,12 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
+          
           {/* Hero Description */}
           <div className={`max-w-4xl mx-auto transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <p className="text-xl sm:text-2xl text-gray-300 leading-relaxed mb-6">
-              Architecting the <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text font-semibold">future of decentralization</span> through 
-              innovative protocol design, gas-optimized smart contracts, and cutting-edge blockchain solutions that scale.
+              Architecting the <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text font-semibold">future of decentralization and privacy</span> through 
+              through innovative protocol design, gas-efficient smart contracts, scalable blockchain infrastructure, and zero-knowledge-powered solutions.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-gray-400">
               {specialties.map((specialty, index) => {
