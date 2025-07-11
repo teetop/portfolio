@@ -243,7 +243,7 @@ const Hero = () => {
                         {achievement.value}
                       </div>
                       <div className="text-lg font-semibold text-gray-300 mb-1">{achievement.label}</div>
-                      <div className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300">{achievement.description}</div>
+                      <div className="text-sm text-gray-500 group-hover:text-black-400 transition-colors duration-300">{achievement.description}</div>
                     </div>
                   </div>
                 );
