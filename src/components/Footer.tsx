@@ -22,8 +22,9 @@ function Footer() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative z-10">
-           <Logo className="w-10 h-10 text-purple-600 dark:text-purple-400" />
+          
           <div className="flex flex-col md:flex-row justify-between items-center">
+             <Logo className="w-10 h-10 text-purple-600 dark:text-purple-400" />
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
               {/* <div className="p-2 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl"> */}
                 
