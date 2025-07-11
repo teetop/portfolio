@@ -15,13 +15,13 @@ const Hero = () => {
   ];
 
   const achievements = [
-    { 
-      icon: Zap, 
-      value: "$100M+", 
-      label: "Total Value Locked", 
-      description: "Across protocols I've architected",
-      color: "from-yellow-400 via-orange-400 to-red-500",
-      delay: "0s"
+     { 
+      icon: Calendar, 
+      value: "5+", 
+      label: "Years Experience", 
+      description: "In blockchain development",
+      color: "from-pink-400 via-rose-400 to-red-500",
+      delay: "0.3s"
     },
     { 
       icon: Code, 
@@ -39,13 +39,13 @@ const Hero = () => {
       color: "from-green-400 via-teal-400 to-cyan-500",
       delay: "0.2s"
     },
-    { 
-      icon: Calendar, 
-      value: "5+", 
-      label: "Years Experience", 
-      description: "In blockchain development",
-      color: "from-pink-400 via-rose-400 to-red-500",
-      delay: "0.3s"
+     { 
+      icon: Zap, 
+      value: "$100M+", 
+      label: "Total Value Locked", 
+      description: "Across protocols I've architected",
+      color: "from-yellow-400 via-orange-400 to-red-500",
+      delay: "0s"
     }
   ];
 
@@ -243,7 +243,7 @@ const Hero = () => {
                         {achievement.value}
                       </div>
                       <div className="text-lg font-semibold text-gray-300 mb-1">{achievement.label}</div>
-                      <div className="text-sm text-gray-500 group-hover:text-black-400 transition-colors duration-300">{achievement.description}</div>
+                      <div className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-300">{achievement.description}</div>
                     </div>
                   </div>
                 );
