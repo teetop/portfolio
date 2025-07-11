@@ -186,7 +186,7 @@ const Hero = () => {
             <p className="text-xl sm:text-2xl text-gray-300 leading-relaxed mb-6">
               Architecting the <span className="text-transparent bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text font-semibold">future of true decentralization and privacy</span> through 
               through innovative protocol design, zero-knowledge-powered solutions, 
-              gas-efficient smart contracts, scalable blockchain infrastructure.
+              gas-efficient smart contracts and scalable blockchain infrastructure.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-gray-400">
               {specialties.map((specialty, index) => {
