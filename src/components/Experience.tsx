@@ -193,7 +193,7 @@ const Experience = () => {
   const totalYears = new Date().getFullYear() - 2019;
 
   return (
-    <section id="experience" className="relative py-20 overflow-hidden bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
+    <section id="experience" className="relative py-20 overflow-hidden bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 dark:from-gray-900 dark:via-purple-900 dark:to-gray-900 bg-gray-50 from-gray-50 via-purple-50 to-gray-50">
       {/* Dynamic Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div 
@@ -245,13 +245,13 @@ const Experience = () => {
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-100 to-red-100 dark:from-orange-900/30 dark:to-red-900/30 px-4 py-2 rounded-full mb-6">
                 <Briefcase size={16} className="text-orange-400" />
-                <span className="text-orange-300 font-medium">Professional Journey</span>
+                <span className="text-orange-600 dark:text-orange-300 font-medium">Professional Journey</span>
               </div>
               
-              <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
                 Work <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Experience</span>
               </h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 {totalYears}+ years of building revolutionary blockchain solutions, from smart contracts to protocol architecture, 
                 with a proven track record of delivering secure, scalable, and innovative systems.
               </p>
@@ -262,21 +262,21 @@ const Experience = () => {
                   <div className="text-3xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
                     {totalYears}+
                   </div>
-                  <div className="text-gray-400 text-sm">Years Experience</div>
+                  <div className="text-gray-500 dark:text-gray-400 text-sm">Years Experience</div>
                 </div>
-                <div className="w-px h-12 bg-gray-600"></div>
+                <div className="w-px h-12 bg-gray-300 dark:bg-gray-600"></div>
                 <div className="text-center">
                   <div className="text-3xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
                     4
                   </div>
-                  <div className="text-gray-400 text-sm">Companies</div>
+                  <div className="text-gray-500 dark:text-gray-400 text-sm">Companies</div>
                 </div>
-                <div className="w-px h-12 bg-gray-600"></div>
+                <div className="w-px h-12 bg-gray-300 dark:bg-gray-600"></div>
                 <div className="text-center">
                   <div className="text-3xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
                     $100M+
                   </div>
-                  <div className="text-gray-400 text-sm">TVL Managed</div>
+                  <div className="text-gray-500 dark:text-gray-400 text-sm">TVL Managed</div>
                 </div>
               </div>
             </div>
@@ -290,7 +290,7 @@ const Experience = () => {
                   className={`group flex items-center gap-3 px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                     activeExperience === index
                       ? `bg-gradient-to-r ${exp.gradient} text-white shadow-lg transform scale-105`
-                      : 'bg-white/10 backdrop-blur-sm text-gray-300 hover:bg-white/20 border border-white/20'
+                      : 'bg-white/80 dark:bg-white/10 backdrop-blur-sm text-gray-700 dark:text-gray-300 hover:bg-white dark:hover:bg-white/20 border border-gray-200 dark:border-white/20 shadow-sm'
                   }`}
                 >
                   <Building size={16} />
@@ -304,7 +304,7 @@ const Experience = () => {
 
             {/* Active Experience Display */}
             <div className={`mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-              <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl overflow-hidden shadow-2xl">
+              <div className="bg-white/90 dark:bg-white/10 backdrop-blur-sm border-2 border-gray-200 dark:border-white/20 rounded-3xl overflow-hidden shadow-2xl">
                 <div className="grid lg:grid-cols-3 gap-0">
                   {/* Company Info Sidebar */}
                   <div className={`bg-gradient-to-br ${experiences[activeExperience].gradient} p-8 lg:p-12 text-white relative overflow-hidden`}>
@@ -365,31 +365,31 @@ const Experience = () => {
                   {/* Experience Details */}
                   <div className="lg:col-span-2 p-8 lg:p-12">
                     <div className="mb-8">
-                      <h4 className="text-2xl font-bold text-white mb-4">Role Overview</h4>
-                      <p className="text-gray-300 text-lg leading-relaxed">
+                      <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Role Overview</h4>
+                      <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                         {experiences[activeExperience].description}
                       </p>
                     </div>
 
                     {/* Key Achievements */}
                     <div className="mb-8">
-                      <h4 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                      <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                         <Award size={20} className="text-yellow-400" />
                         Key Achievements
                       </h4>
                       <div className="grid gap-4">
                         {experiences[activeExperience].achievements.map((achievement, achIndex) => (
-                          <div key={achIndex} className="group flex items-start gap-4 p-4 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300">
+                          <div key={achIndex} className="group flex items-start gap-4 p-4 bg-gray-50 dark:bg-white/5 backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/10 hover:bg-gray-100 dark:hover:bg-white/10 hover:border-gray-300 dark:hover:border-white/20 transition-all duration-300">
                             <div className={`bg-gradient-to-r ${experiences[activeExperience].gradient} p-2 rounded-lg text-white flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
                               {achievement.icon}
                             </div>
                             <div className="flex-1">
-                              <p className="text-gray-300 leading-relaxed mb-2">
+                              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-2">
                                 {achievement.text}
                               </p>
                               <div className={`inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r ${experiences[activeExperience].gradient} bg-opacity-20 rounded-full`}>
                                 <Star size={12} className="text-yellow-400" />
-                                <span className="text-xs font-semibold text-white">
+                                <span className="text-xs font-semibold text-gray-800 dark:text-white">
                                   {achievement.impact}
                                 </span>
                               </div>
@@ -401,7 +401,7 @@ const Experience = () => {
 
                     {/* Technologies */}
                     <div className="mb-8">
-                      <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                      <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                         <Code2 size={20} className="text-blue-400" />
                         Technologies Used
                       </h4>
@@ -409,7 +409,7 @@ const Experience = () => {
                         {experiences[activeExperience].technologies.map((tech, techIndex) => (
                           <span 
                             key={techIndex} 
-                            className={`bg-gradient-to-r ${experiences[activeExperience].gradient} bg-opacity-20 text-white px-4 py-2 rounded-lg text-sm border border-white/20 font-medium hover:scale-105 transition-transform duration-300`}
+                            className={`bg-gradient-to-r ${experiences[activeExperience].gradient} bg-opacity-20 text-gray-800 dark:text-white px-4 py-2 rounded-lg text-sm border border-gray-300 dark:border-white/20 font-medium hover:scale-105 transition-transform duration-300`}
                           >
                             {tech}
                           </span>
@@ -419,13 +419,13 @@ const Experience = () => {
 
                     {/* Responsibilities */}
                     <div>
-                      <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                      <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                         <Users size={20} className="text-green-400" />
                         Key Responsibilities
                       </h4>
                       <ul className="space-y-3">
                         {experiences[activeExperience].responsibilities.map((responsibility, respIndex) => (
-                          <li key={respIndex} className="flex items-start gap-3 text-gray-300">
+                          <li key={respIndex} className="flex items-start gap-3 text-gray-600 dark:text-gray-300">
                             <ChevronRight size={16} className="text-purple-400 mt-1 flex-shrink-0" />
                             <span>{responsibility}</span>
                           </li>
