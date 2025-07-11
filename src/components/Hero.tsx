@@ -17,7 +17,7 @@ const Hero = () => {
   const achievements = [
      { 
       icon: Calendar, 
-      value: "5+", 
+      value: "3+", 
       label: "Years Experience", 
       description: "In blockchain development",
       color: "from-pink-400 via-rose-400 to-red-500",
@@ -25,7 +25,7 @@ const Hero = () => {
     },
     { 
       icon: Code, 
-      value: "25+", 
+      value: "100+", 
       label: "Smart Contracts", 
       description: "Deployed with zero security incidents",
       color: "from-blue-400 via-purple-400 to-pink-500",
