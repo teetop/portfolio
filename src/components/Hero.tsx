@@ -51,9 +51,9 @@ const Hero = () => {
 
   const techStack = [
     { name: "Rust", icon: "🦀", color: "from-orange-500 to-red-600", expertise: "Expert" },
+    { name: "Java", icon: "☕", color: "from-amber-500 to-orange-600", expertise: "Expert" },
     { name: "Solidity", icon: "⚡", color: "from-blue-500 to-indigo-600", expertise: "Expert" },
     { name: "Cairo", icon: "🔺", color: "from-purple-500 to-pink-600", expertise: "Advanced" },
-    { name: "Java", icon: "☕", color: "from-amber-500 to-orange-600", expertise: "Expert" }
   ];
 
   const specialties = [
