@@ -26,7 +26,7 @@ function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
-               <Logo className="w-10 h-10 text-purple-600 dark:text-purple-400" />
+               <Logo className="w-15 h-15 text-purple-600 dark:text-purple-400" />
               <div className="text-center md:text-left">
                 <p className="text-gray-300 flex items-center justify-center md:justify-start gap-1">
                   Built with <Heart size={16} className="text-red-500" />
