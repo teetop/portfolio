@@ -24,8 +24,9 @@ function Footer() {
         <div className="relative z-10">
           
           <div className="flex flex-col md:flex-row justify-between items-center">
-             <Logo className="w-10 h-10 text-purple-600 dark:text-purple-400" />
+            
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
+               <Logo className="w-10 h-10 text-purple-600 dark:text-purple-400" />
               {/* <div className="p-2 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl"> */}
                 
               {/* </div> */}
