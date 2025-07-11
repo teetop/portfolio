@@ -1,6 +1,3 @@
-Here's the fixed version with all missing closing brackets added:
-
-```javascript
 import React, { useState, useEffect } from 'react';
 import { Calendar, MapPin, ExternalLink, ChevronRight, Award, TrendingUp, Users, Code2, Zap, Shield, Globe, Star, Building, Briefcase } from 'lucide-react';
 
@@ -194,10 +191,6 @@ const Experience = () => {
   ];
 
   const totalYears = new Date().getFullYear() - 2019;
-  const totalProjects = experiences.reduce((sum, exp) => {
-    const projectCount = exp.achievements.find(a => a.text.includes('Contracts') || a.text.includes('protocols'))?.impact;
-    return sum + (projectCount ? parseInt(projectCount) || 0 : 0);
-  }, 0);
 
   return (
     <section id="experience" className="relative py-20 overflow-hidden bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
@@ -443,169 +436,11 @@ const Experience = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-            {/* Career Progression Timeline */}
-            <div className="mb-16">
-              <h3 className="text-3xl font-bold text-white mb-8 text-center">
-                Career <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Progression</span>
-              </h3>
-              
-              <div className="relative max-w-6xl mx-auto">
-                {/* Animated Timeline Line */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-orange-500 via-red-500 to-pink-500 rounded-full opacity-30"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-orange-500 via-red-500 to-pink-500 rounded-full animate-pulse" 
-                     style={{ height: `${((activeExperience + 1) / experiences.length) * 100}%` }}></div>
-                
-                <div className="space-y-16">
-                  {experiences.map((exp, index) => (
-                    <div 
-                      key={index}
-                      className={`relative flex items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} flex-col lg:gap-12 gap-6`}
-                    >
-                      {/* Timeline Node with Year Badge */}
-                      <div className="flex-1 hidden lg:block"></div>
-                      <div 
-                        className={`relative z-10 flex flex-col items-center cursor-pointer group ${
-                          activeExperience === index ? 'scale-110' : ''
-                        }`}
-                        onClick={() => setActiveExperience(index)}
-                      >
-                        {/* Year Badge */}
-                        <div className={`mb-4 px-4 py-2 bg-gradient-to-r ${exp.gradient} rounded-full text-white font-bold text-sm shadow-lg group-hover:shadow-xl transition-all duration-300`}>
-                          {exp.duration.split(' - ')[0]}
-                        </div>
-                        
-                        {/* Main Node */}
-                        <div className={`p-6 bg-gradient-to-r ${exp.gradient} rounded-full shadow-2xl group-hover:scale-110 transition-all duration-300 ${
-                          activeExperience === index ? 'ring-4 ring-white/30 animate-pulse' : ''
-                        }`}>
-                          <Building size={28} className="text-white" />
-                        </div>
-                        
-                        {/* Connecting Lines */}
-                        <div className={`absolute top-full mt-2 w-px h-8 bg-gradient-to-b ${exp.gradient} opacity-50`}></div>
-                      </div>
-                      
-                      {/* Enhanced Experience Card */}
-                      <div className="flex-1 w-full lg:max-w-md">
-                        <div 
-                          className={`group p-8 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 cursor-pointer transition-all duration-500 hover:bg-white/15 hover:border-white/30 hover:shadow-2xl ${
-                            activeExperience === index ? 'bg-white/20 border-white/40 transform scale-105 shadow-2xl' : ''
-                          }`}
-                          onClick={() => setActiveExperience(index)}
-                        >
-                          {/* Card Header */}
-                          <div className="flex items-start justify-between mb-4">
-                            <div className="flex-1">
-                              <h4 className="text-xl font-bold text-white mb-1 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-white group-hover:to-gray-300 transition-all duration-300">
-                                {exp.position}
-                              </h4>
-                              <div className="flex items-center gap-2 text-sm text-gray-400">
-                                <Calendar size={14} />
-                                <span>{exp.duration}</span>
-                              </div>
-                            </div>
-                            <div className={`p-2 bg-gradient-to-r ${exp.gradient} rounded-lg opacity-80 group-hover:opacity-100 transition-opacity duration-300`}>
-                              <Building size={20} className="text-white" />
-                            </div>
-                          </div>
-                          
-                          {/* Company Name */}
-                          <h5 className={`text-lg font-bold mb-3 bg-gradient-to-r ${exp.gradient} bg-clip-text text-transparent`}>
-                            {exp.company}
-                          </h5>
-                          
-                          {/* Description */}
-                          <p className="text-gray-300 text-sm mb-4 leading-relaxed line-clamp-3">
-                            {exp.description}
-                          </p>
-                          
-                          {/* Key Metrics */}
-                          <div className="flex flex-wrap gap-2 mb-4">
-                            {exp.achievements.slice(0, 2).map((achievement, achIndex) => (
-                              <div key={achIndex} className={`px-3 py-1 bg-gradient-to-r ${exp.gradient} bg-opacity-20 rounded-full text-xs font-medium text-white border border-white/20`}>
-                                {achievement.impact}
-                              </div>
-                            ))}
-                          </div>
-                          
-                          {/* Location and Type */}
-                          <div className="flex items-center justify-between text-xs text-gray-400">
-                            <div className="flex items-center gap-2">
-                              <MapPin size={12} />
-                              <span>{exp.location}</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                              <Briefcase size={12} />
-                              <span>{exp.type}</span>
-                            </div>
-                          </div>
-                          
-                          {/* Hover Indicator */}
-                          <div className="mt-4 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <div className="flex items-center gap-2 text-xs text-gray-400">
-                              <span>Click to view details</span>
-                              <ChevronRight size={12} className="group-hover:translate-x-1 transition-transform duration-300" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                
-                {/* Progress Indicators */}
-                <div className="flex justify-center mt-12 space-x-4">
-                  {experiences.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setActiveExperience(index)}
-                      className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                        activeExperience === index
-                          ? `bg-gradient-to-r ${experiences[index].gradient} shadow-lg scale-125`
-                          : 'bg-white/30 hover:bg-white/50'
-                      }`}
-                      title={experiences[index].company}
-                    />
-                  ))}
-                </div>
-                
-                {/* Career Growth Stats */}
-                <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                    <div className="text-3xl font-bold bg-gradient-to-r from-green-400 to-teal-400 bg-clip-text text-transparent mb-2">
-                      Backend → Protocol
-                    </div>
-                    <div className="text-gray-300 text-sm">
-                      Evolution from traditional backend to blockchain protocol engineering
-                    </div>
-                  </div>
-                  
-                  <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                    <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-2">
-                      $0 → $100M+
-                    </div>
-                    <div className="text-gray-300 text-sm">
-                      Growth in Total Value Locked across managed protocols
-                    </div>
-                  </div>
-                  
-                  <div className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                    <div className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
-                      Junior → Senior
-                    </div>
-                    <div className="text-gray-300 text-sm">
-                      Leadership progression from individual contributor to team lead
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Skills Evolution Timeline */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-white mb-8 text-center">
-                Skills <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Evolution</span>
-              </h3>
-              
-              <div className="grid grid-cols
+export default Experience;
