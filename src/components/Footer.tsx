@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Heart, ArrowUp, Shield } from 'lucide-react';
+import Logo from './Logo';
 
 function Footer() {
   const scrollToTop = () => {
@@ -24,7 +25,7 @@ function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
               <div className="p-2 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl">
-                <Shield className="h-6 w-6 text-white" />
+                 <Logo className="w-10 h-10 text-purple-600 dark:text-purple-400" />
               </div>
               <div className="text-center md:text-left">
                 <p className="text-gray-300 flex items-center justify-center md:justify-start gap-1">
