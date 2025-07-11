@@ -42,7 +42,7 @@ const Hero = () => {
      { 
       icon: Zap, 
       value: "10+", 
-      label: "DApps built", 
+      label: "DApps are live", 
       description: "Across different protocols",
       color: "from-yellow-400 via-orange-400 to-red-500",
       delay: "0s"
