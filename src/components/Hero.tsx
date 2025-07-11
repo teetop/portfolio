@@ -57,10 +57,10 @@ const Hero = () => {
   ];
 
   const specialties = [
-    { icon: Shield, title: "Security-Driven", description: "Zero-vulnerability smart contracts" },
-    { icon: Zap, title: "Gas-Efficient", description: "Maximum efficiency, minimum cost" },
+    { icon: Shield, title: "Security-Obsessed", description: "Zero-vulnerability smart contracts" },
+    { icon: Zap, title: "Gas Optimization Junkie", description: "Maximum efficiency, minimum cost" },
     { icon: Globe, title: "Cross-Chain Native", description: "Multi-blockchain expertise" },
-    { icon: Rocket, title: "Built to Scale", description: "High-performance protocols" }
+    { icon: Rocket, title: "Scalability-Driven", description: "High-performance protocols" }
   ];
 
   useEffect(() => {
