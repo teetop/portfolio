@@ -229,9 +229,9 @@ const About = () => {
             </div>
 
             {/* Hero Profile Section */}
-            <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
+            <div className="grid lg:grid-cols-2 gap-16 items-start mb-24">
               {/* Left side - Enhanced Profile */}
-              <div className={`flex flex-col justify-center ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+              <div className={`flex flex-col ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
                 {/* Enhanced Profile Image with Multiple Effects */}
                 <div className="relative group mb-8">
                   {/* Outer glow effect */}
@@ -297,7 +297,7 @@ const About = () => {
               </div>
 
               {/* Right side - Interactive Story Tabs */}
-              <div className={`space-y-6 flex flex-col justify-center ${isVisible ? 'animate-fade-in-delay' : 'opacity-0'}`}>
+              <div className={`space-y-6 flex flex-col ${isVisible ? 'animate-fade-in-delay' : 'opacity-0'}`}>
                 <div className="flex space-x-1 bg-white/10 backdrop-blur-sm p-1 rounded-xl">
                   {tabs.map((tab, index) => (
                     <button
