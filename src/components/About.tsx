@@ -259,16 +259,10 @@ const About = () => {
                   </div>
                   
                   <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                    {techStack.map((tech, index) => (
-                      <div key={index} className={`group relative px-4 py-2 rounded-full ${tech.color} border transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer`}>
-                        <span className="font-medium">{tech.name}</span>
-                        <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap">
-                          {tech.level}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  
+                    
+               
+                    
+                  </div>                  
                 </div>
               </div>
 
