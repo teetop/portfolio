@@ -231,28 +231,87 @@ const About = () => {
             {/* Hero Profile Section */}
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
               {/* Left side - Enhanced Profile */}
-              <div className={`space-y-8 flex flex-col justify-center ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-                <div className="relative group">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-3xl blur-lg opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
-                  <div className="relative w-80 h-80 lg:w-96 lg:h-96 mx-auto lg:mx-0 rounded-3xl bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 p-1 shadow-2xl">
-                    <div className="w-full h-full rounded-3xl bg-gray-900/80 backdrop-blur-sm overflow-hidden flex items-center justify-center">
+              <div className={`flex flex-col justify-center ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+                {/* Enhanced Profile Image with Multiple Effects */}
+                <div className="relative group mb-8">
+                  {/* Outer glow effect */}
+                  <div className="absolute -inset-8 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-all duration-700 animate-pulse"></div>
+                  
+                  {/* Rotating border animation */}
+                  <div className="absolute -inset-2 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-full opacity-75 group-hover:opacity-100 transition-opacity duration-500 animate-spin" style={{animationDuration: '8s'}}></div>
+                  
+                  {/* Main image container */}
+                  <div className="relative w-80 h-80 lg:w-96 lg:h-96 mx-auto lg:mx-0 rounded-full bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 p-2 shadow-2xl group-hover:shadow-purple-500/25 transition-all duration-500">
+                    <div className="w-full h-full rounded-full bg-gray-900/90 backdrop-blur-sm overflow-hidden border-4 border-white/20 group-hover:border-white/40 transition-all duration-500">
                       <img 
                         src="/369556231_6748106998579271_2348261776859574740_n.jpg" 
-                        alt="Michael Dean Oyewole"
-                        className="w-full h-full object-cover object-center rounded-2xl"
+                        alt="Michael Dean Oyewole - Blockchain Engineer"
+                        className="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-700"
                       />
+                      
+                      {/* Overlay gradient */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-purple-900/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
                   </div>
+                  
+                  {/* Floating elements around the image */}
+                  <div className="absolute top-4 right-4 w-6 h-6 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-bounce" style={{animationDelay: '0s'}}></div>
+                  <div className="absolute top-1/3 -left-4 w-4 h-4 bg-gradient-to-r from-green-400 to-teal-400 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
+                  <div className="absolute bottom-8 right-8 w-5 h-5 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full animate-bounce" style={{animationDelay: '2s'}}></div>
+                  <div className="absolute bottom-1/3 -left-2 w-3 h-3 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div>
                 </div>
                 
-                <div className="text-center lg:text-left space-y-6">
-                 
+                {/* Professional Info Cards */}
+                <div className="space-y-4">
+                  {/* Name and Title Card */}
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center lg:text-left group hover:bg-white/15 transition-all duration-300">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2">
+                      Michael Dean Oyewole
+                    </h3>
+                    <p className="text-lg text-purple-300 mb-3">
+                      Senior Blockchain Engineer
+                    </p>
+                    <div className="flex items-center justify-center lg:justify-start gap-2 text-gray-300">
+                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                      <span className="text-sm">Available for Revolutionary Projects</span>
+                    </div>
+                  </div>
                   
-                  <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                    
-               
-                    
-                  </div>                  
+                  {/* Quick Stats Grid */}
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4 text-center group hover:scale-105 transition-all duration-300">
+                      <div className="text-2xl font-bold text-white mb-1">5+</div>
+                      <div className="text-xs text-purple-300">Years Experience</div>
+                    </div>
+                    <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-sm border border-blue-400/30 rounded-xl p-4 text-center group hover:scale-105 transition-all duration-300">
+                      <div className="text-2xl font-bold text-white mb-1">$100M+</div>
+                      <div className="text-xs text-blue-300">TVL Secured</div>
+                    </div>
+                    <div className="bg-gradient-to-br from-green-500/20 to-teal-500/20 backdrop-blur-sm border border-green-400/30 rounded-xl p-4 text-center group hover:scale-105 transition-all duration-300">
+                      <div className="text-2xl font-bold text-white mb-1">25+</div>
+                      <div className="text-xs text-green-300">Smart Contracts</div>
+                    </div>
+                    <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-sm border border-orange-400/30 rounded-xl p-4 text-center group hover:scale-105 transition-all duration-300">
+                      <div className="text-2xl font-bold text-white mb-1">95%</div>
+                      <div className="text-xs text-orange-300">Gas Optimized</div>
+                    </div>
+                  </div>
+                  
+                  {/* Expertise Tags */}
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
+                    <h4 className="text-white font-semibold mb-4 text-center lg:text-left">Core Expertise</h4>
+                    <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+                      {['Protocol Engineering', 'Smart Contracts', 'DeFi', 'Layer 2', 'Security Audits', 'Gas Optimization'].map((skill, index) => (
+                        <span 
+                          key={skill}
+                          className="px-3 py-1 bg-gradient-to-r from-purple-500/30 to-pink-500/30 text-purple-200 rounded-full text-xs font-medium border border-purple-400/30 hover:scale-105 transition-transform duration-300"
+                          style={{animationDelay: `${index * 0.1}s`}}
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
 
