@@ -246,13 +246,7 @@ const About = () => {
                 </div>
                 
                 <div className="text-center lg:text-left space-y-6">
-                  <div>
-                    <h3 className="text-3xl font-bold text-white mb-2">
-                      Michael Dean Oyewole
-                    </h3>
-                   
-                    
-                  </div>
+                 
                   
                   <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                     
