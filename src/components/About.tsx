@@ -231,11 +231,11 @@ const About = () => {
             {/* Hero Profile Section */}
             <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
               {/* Left side - Enhanced Profile */}
-              <div className={`space-y-8 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+              <div className={`space-y-8 flex flex-col justify-center ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-3xl blur-lg opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
-                  <div className="relative w-96 h-96 mx-auto lg:mx-0 rounded-3xl bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 p-1 shadow-2xl">
-                    <div className="w-full h-full rounded-3xl bg-gray-900/80 backdrop-blur-sm overflow-hidden">
+                  <div className="relative w-80 h-80 lg:w-96 lg:h-96 mx-auto lg:mx-0 rounded-3xl bg-gradient-to-br from-purple-400 via-pink-400 to-blue-400 p-1 shadow-2xl">
+                    <div className="w-full h-full rounded-3xl bg-gray-900/80 backdrop-blur-sm overflow-hidden flex items-center justify-center">
                       <img 
                         src="/369556231_6748106998579271_2348261776859574740_n.jpg" 
                         alt="Michael Dean Oyewole"
@@ -257,7 +257,7 @@ const About = () => {
               </div>
 
               {/* Right side - Interactive Story Tabs */}
-              <div className={`space-y-6 ${isVisible ? 'animate-fade-in-delay' : 'opacity-0'}`}>
+              <div className={`space-y-6 flex flex-col justify-center ${isVisible ? 'animate-fade-in-delay' : 'opacity-0'}`}>
                 <div className="flex space-x-1 bg-white/10 backdrop-blur-sm p-1 rounded-xl">
                   {tabs.map((tab, index) => (
                     <button
