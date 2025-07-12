@@ -269,7 +269,14 @@ const About = () => {
                     ))}
                   </div>
 
-           
+                  <div className="flex items-center gap-4 justify-center lg:justify-start pt-4">
+                    
+                 
+                    
+                  </div>
+                </div>
+              </div>
+
               {/* Right side - Interactive Story Tabs */}
               <div className={`space-y-6 ${isVisible ? 'animate-fade-in-delay' : 'opacity-0'}`}>
                 <div className="flex space-x-1 bg-white/10 backdrop-blur-sm p-1 rounded-xl">
