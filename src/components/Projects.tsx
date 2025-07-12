@@ -103,23 +103,6 @@ const Projects = () => {
               Featured <span className="bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">Projects</span>
             </h2>
             
-            {/* Project Navigation */}
-            <div className="flex flex-wrap justify-center gap-2 mb-12">
-              {projects.map((project, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveProject(index)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                    activeProject === index
-                      ? 'bg-gradient-to-r from-green-500 to-teal-500 text-white shadow-lg transform scale-105'
-                      : 'bg-white/10 backdrop-blur-sm text-gray-300 hover:bg-white/20 border border-white/20'
-                  }`}
-                >
-                  {project.title}
-                </button>
-              ))}
-            </div>
-
             {/* Active Project Display */}
             <div className="mb-12">
               <div className="bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-3xl overflow-hidden transition-all duration-500 shadow-2xl">
@@ -193,34 +176,6 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Navigation Controls */}
-            <div className="flex justify-center items-center gap-8">
-              <button
-                onClick={prevProject}
-                className="group bg-white/10 backdrop-blur-sm p-4 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 transform hover:scale-110"
-                title="Previous Project"
-              >
-                <ChevronLeft size={24} className="text-gray-300 group-hover:text-white transition-colors duration-300" />
-              </button>
-              
-              <div className="text-center">
-                <div className="text-white font-semibold text-lg mb-1">
-                  {activeProject + 1} of {projects.length}
-                </div>
-                <div className="text-gray-400 text-sm">
-                  Featured Projects
-                </div>
-              </div>
-              
-              <button
-                onClick={nextProject}
-                className="group bg-white/10 backdrop-blur-sm p-4 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 transform hover:scale-110"
-                title="Next Project"
-              >
-                <ChevronRight size={24} className="text-gray-300 group-hover:text-white transition-colors duration-300" />
-              </button>
             </div>
 
             {/* Project Overview Grid */}
