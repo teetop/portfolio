@@ -269,25 +269,7 @@ const About = () => {
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-4 justify-center lg:justify-start pt-4">
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-white">5+</div>
-                      <div className="text-sm text-gray-400">Years</div>
-                    </div>
-                    <div className="w-px h-8 bg-gray-600"></div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-white">25+</div>
-                      <div className="text-sm text-gray-400">Contracts</div>
-                    </div>
-                    <div className="w-px h-8 bg-gray-600"></div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-white">$100M+</div>
-                      <div className="text-sm text-gray-400">TVL</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+           
               {/* Right side - Interactive Story Tabs */}
               <div className={`space-y-6 ${isVisible ? 'animate-fade-in-delay' : 'opacity-0'}`}>
                 <div className="flex space-x-1 bg-white/10 backdrop-blur-sm p-1 rounded-xl">
