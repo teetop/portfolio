@@ -276,26 +276,7 @@ const About = () => {
                       <span className="text-sm">Available for Revolutionary Projects</span>
                     </div>
                   </div>
-                  
-                  {/* Quick Stats Grid */}
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm border border-purple-400/30 rounded-xl p-4 text-center group hover:scale-105 transition-all duration-300">
-                      <div className="text-2xl font-bold text-white mb-1">5+</div>
-                      <div className="text-xs text-purple-300">Years Experience</div>
-                    </div>
-                    <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-sm border border-blue-400/30 rounded-xl p-4 text-center group hover:scale-105 transition-all duration-300">
-                      <div className="text-2xl font-bold text-white mb-1">$100M+</div>
-                      <div className="text-xs text-blue-300">TVL Secured</div>
-                    </div>
-                    <div className="bg-gradient-to-br from-green-500/20 to-teal-500/20 backdrop-blur-sm border border-green-400/30 rounded-xl p-4 text-center group hover:scale-105 transition-all duration-300">
-                      <div className="text-2xl font-bold text-white mb-1">25+</div>
-                      <div className="text-xs text-green-300">Smart Contracts</div>
-                    </div>
-                    <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-sm border border-orange-400/30 rounded-xl p-4 text-center group hover:scale-105 transition-all duration-300">
-                      <div className="text-2xl font-bold text-white mb-1">95%</div>
-                      <div className="text-xs text-orange-300">Gas Optimized</div>
-                    </div>
-                  </div>
+          
                   
                   {/* Expertise Tags */}
                   <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6">
