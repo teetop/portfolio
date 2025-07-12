@@ -269,9 +269,7 @@ const About = () => {
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-4 justify-center lg:justify-start pt-4">
-                    
-                 
+                  
                     
                   </div>
                 </div>
