@@ -391,7 +391,7 @@ const Experience = () => {
                     <div>
                        <Award size={18} className="text-yellow-400 sm:w-5 sm:h-5" />
                         Key Achievements
-                      </h4>
+                      
 
                       
                       
