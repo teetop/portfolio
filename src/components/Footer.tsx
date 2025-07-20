@@ -29,7 +29,7 @@ function Footer() {
                <Logo className="w-8 h-8 lg:w-10 lg:h-10 text-purple-600 dark:text-purple-400" />
               <div className="text-center sm:text-left">
                 <p className="text-gray-300 flex items-center justify-center sm:justify-start gap-1 text-sm lg:text-base">
-                  Built with <Heart size={14} className="text-red-500 lg:w-4 lg:h-4" /> by me
+                  Built with <Heart size={14} className="text-red-500 lg:w-4 lg:h-4" /> by Dean
                 </p>
                 <p className="text-gray-400 text-xs lg:text-sm mt-1">
                   © {new Date().getFullYear()}  Michael Dean Oyewole.
