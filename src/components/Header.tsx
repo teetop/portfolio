@@ -54,7 +54,7 @@ const Header = () => {
             <Logo className="w-8 h-8 lg:w-10 lg:h-10 text-purple-600 dark:text-purple-400" />
             <div className="text-lg lg:text-xl font-bold text-gray-900 dark:text-white">
               <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
-                DΣΛП
+                𝝙𝝚𝝖𝝢
               </span>
             </div>
           </div>
