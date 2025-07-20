@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, MapPin, ExternalLink, ChevronRight, Award, TrendingUp, Users, Code2, Zap, Shield, Globe, Star, Building, Briefcase } from 'lucide-react';
+import { Calendar, MapPin, ExternalLink, ChevronRight, ChevronLeft, Award, TrendingUp, Users, Code2, Zap, Shield, Globe, Star, Building, Briefcase } from 'lucide-react';
 
 const Experience = () => {
   const [activeExperience, setActiveExperience] = useState(0);
@@ -281,27 +281,6 @@ const Experience = () => {
               </div>
             </div>
 
-            {/* Experience Timeline Navigation */}
-            <div className="flex flex-wrap justify-center gap-1 sm:gap-2 mb-8 lg:mb-12 px-4 sm:px-0">
-              {experiences.map((exp, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveExperience(index)}
-                  className={`group flex items-center gap-2 sm:gap-3 px-3 sm:px-4 lg:px-6 py-2 sm:py-3 rounded-lg lg:rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 ${
-                    activeExperience === index
-                      ? `bg-gradient-to-r ${exp.gradient} text-white shadow-lg transform scale-105`
-                      : 'bg-white/80 dark:bg-white/10 backdrop-blur-sm text-gray-700 dark:text-gray-300 hover:bg-white dark:hover:bg-white/20 border border-gray-200 dark:border-white/20 shadow-sm'
-                  }`}
-                >
-                  <Building size={14} className="sm:w-4 sm:h-4" />
-                  <div className="text-left">
-                    <div className="font-semibold text-xs sm:text-sm">{exp.company}</div>
-                    <div className="text-xs opacity-75 hidden sm:block">{exp.duration}</div>
-                  </div>
-                </button>
-              ))}
-            </div>
-
             {/* Active Experience Display */}
             <div className={`mb-12 lg:mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               <div className="bg-white/90 dark:bg-white/10 backdrop-blur-sm border-2 border-gray-200 dark:border-white/20 rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl mx-4 sm:mx-0">
@@ -435,6 +414,34 @@ const Experience = () => {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Navigation Controls */}
+            <div className="flex justify-center items-center gap-4 sm:gap-6 lg:gap-8 px-4 sm:px-0">
+              <button
+                onClick={() => setActiveExperience((prev) => (prev - 1 + experiences.length) % experiences.length)}
+                className="group bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 transform hover:scale-110"
+                title="Previous Experience"
+              >
+                <ChevronLeft size={20} className="text-gray-300 group-hover:text-white transition-colors duration-300 sm:w-6 sm:h-6" />
+              </button>
+              
+              <div className="text-center">
+                <div className="text-white font-semibold text-sm sm:text-base lg:text-lg mb-1">
+                  {experiences[activeExperience].company}
+                </div>
+                <div className="text-gray-400 text-xs sm:text-sm">
+                  {activeExperience + 1} of {experiences.length}
+                </div>
+              </div>
+              
+              <button
+                onClick={() => setActiveExperience((prev) => (prev + 1) % experiences.length)}
+                className="group bg-white/10 backdrop-blur-sm p-3 sm:p-4 rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 transform hover:scale-110"
+                title="Next Experience"
+              >
+                <ChevronRight size={20} className="text-gray-300 group-hover:text-white transition-colors duration-300 sm:w-6 sm:h-6" />
+              </button>
             </div>
           </div>
         </div>
