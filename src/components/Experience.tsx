@@ -23,11 +23,13 @@ const Experience = () => {
     return () => observer.disconnect();
   }, []);
 
+
+  
   const experiences = [
     {
-      company: 'DeFi Protocol Labs',
-      position: 'Senior Blockchain Engineer',
-      duration: '2023 - Present',
+      company: 'Mariblock',
+      position: 'Blockchain Engineer',
+      duration: 'November 2024 - Present',
       location: 'Remote',
       type: 'Full-time',
       description: 'Leading the development of next-generation DeFi protocols with focus on yield optimization and cross-chain interoperability. Architected smart contracts handling over $100M TVL with zero security incidents.',
