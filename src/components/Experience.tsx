@@ -387,23 +387,8 @@ const Experience = () => {
 
                   
 
-                    {/* Responsibilities */}
-                    <div>
-                       <Award size={18} className="text-yellow-400 sm:w-5 sm:h-5" />
-                        Key Achievements
-                      
-
-                      
-                      
-                      <ul className="space-y-2 lg:space-y-3">
-                        {experiences[activeExperience].responsibilities.map((responsibility, respIndex) => (
-                          <li key={respIndex} className="flex items-start gap-2 lg:gap-3 text-gray-600 dark:text-gray-300 text-sm lg:text-base">
-                            <ChevronRight size={14} className="text-purple-400 mt-1 flex-shrink-0 lg:w-4 lg:h-4" />
-                            <span className="leading-relaxed">{responsibility}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                   
+                    
                   </div>
                 </div>
               </div>
