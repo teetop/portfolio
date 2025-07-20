@@ -276,11 +276,7 @@ const Contact = () => {
                       Sending your message...
                     </div>
                   )}
-                  {result && result !== "Please wait..." && result.toLowerCase().includes("success") && (
-                    <div className="mt-4 p-4 bg-red-500/20 border border-red-500/30 rounded-lg text-red-300 text-center">
-                      ❌ {result}
-                    </div>
-                  )}
+                 
                   {(result === "Thank you! Your submission has been received!" || result.toLowerCase().includes("success")) && (
                     <div className="mt-4 p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-green-300 text-center">
                       ✅ Message sent successfully! I'll get back to you soon.
