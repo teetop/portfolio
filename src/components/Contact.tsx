@@ -263,8 +263,9 @@ const Contact = () => {
                   Send Message
                 </button>
                 
-              {/* Status Messages */}
-{result && (
+                {/* Status Messages */}
+                <div id="form-result" style={{ display: 'none' }}>
+                {result && (
   <div id="form-result" className="mt-4">
     {result === "Please wait..." && (
       <div className="p-4 bg-blue-500/20 border border-blue-500/30 rounded-lg text-blue-300 text-center flex items-center justify-center gap-2">
@@ -288,7 +289,7 @@ const Contact = () => {
     )}
   </div>
 )}
-
+                </div>
               </form>
             </div>
           </div>
