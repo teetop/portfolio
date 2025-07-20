@@ -333,8 +333,30 @@ const Experience = () => {
                       </p>
                     </div>
 
+                   
                     {/* Key Achievements */}
                     <div className="mb-6 lg:mb-8">
+
+                        {/* Technologies */}
+                    <div className="mb-6 lg:mb-8">
+                      <h4 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4 flex items-center gap-2">
+                        <Code2 size={18} className="text-blue-400 sm:w-5 sm:h-5" />
+                        Technologies Used
+                      </h4>
+                      <div className="flex flex-wrap gap-2 lg:gap-3">
+                        {experiences[activeExperience].technologies.map((tech, techIndex) => (
+                          <span 
+                            key={techIndex} 
+                            className={`bg-gradient-to-r ${experiences[activeExperience].gradient} bg-opacity-20 text-gray-800 dark:text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md lg:rounded-lg text-xs sm:text-sm border border-gray-300 dark:border-white/20 font-medium hover:scale-105 transition-transform duration-300`}
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                      
+                    </div>
+
+                      
                       <h4 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4 lg:mb-6 flex items-center gap-2">
                         <Award size={18} className="text-yellow-400 sm:w-5 sm:h-5" />
                         Key Achievements
@@ -361,23 +383,7 @@ const Experience = () => {
                       </div>
                     </div>
 
-                    {/* Technologies */}
-                    <div className="mb-6 lg:mb-8">
-                      <h4 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4 flex items-center gap-2">
-                        <Code2 size={18} className="text-blue-400 sm:w-5 sm:h-5" />
-                        Technologies Used
-                      </h4>
-                      <div className="flex flex-wrap gap-2 lg:gap-3">
-                        {experiences[activeExperience].technologies.map((tech, techIndex) => (
-                          <span 
-                            key={techIndex} 
-                            className={`bg-gradient-to-r ${experiences[activeExperience].gradient} bg-opacity-20 text-gray-800 dark:text-white px-2 sm:px-3 lg:px-4 py-1 sm:py-2 rounded-md lg:rounded-lg text-xs sm:text-sm border border-gray-300 dark:border-white/20 font-medium hover:scale-105 transition-transform duration-300`}
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
+                  
 
                     {/* Responsibilities */}
                     <div>
