@@ -22,14 +22,6 @@ const Experience = () => {
 
     return () => observer.disconnect();
   }, []);
-
-  BACKEND SOFTWARE ENGINEER (Remote)
-
-Syncskills. Flagstone, QLD, Australia
-July 2023 – March 2024
-    
-Flagstone, QLD, Australia
-•Integrated RabbitMQ to optimize communication, achieving 20% lowe
   
   const experiences = [
     {
