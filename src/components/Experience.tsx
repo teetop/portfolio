@@ -22,6 +22,14 @@ const Experience = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  BACKEND SOFTWARE ENGINEER (Remote)
+
+Syncskills. Flagstone, QLD, Australia
+July 2023 – March 2024
+    
+Flagstone, QLD, Australia
+•Integrated RabbitMQ to optimize communication, achieving 20% lowe
   
   const experiences = [
     {
@@ -64,10 +72,10 @@ const Experience = () => {
       gradient: 'from-purple-500 via-pink-500 to-red-500'
     },
     {
-      company: 'Blockchain Infrastructure Co',
-      position: 'Protocol Engineer',
-      duration: '2021 - 2023',
-      location: 'San Francisco, CA',
+      company: 'Syncskills',
+      position: 'Backend Engineer',
+      duration: 'July 2023 – March 2024',
+      location: 'Flagstone, QLD, Australia (Remote)',
       type: 'Full-time',
       description: 'Developed Layer 2 scaling solutions and consensus mechanisms. Built infrastructure supporting 10,000+ TPS with sub-second finality, revolutionizing blockchain scalability.',
       achievements: [
