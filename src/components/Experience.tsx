@@ -30,8 +30,6 @@ const Experience = () => {
       duration: '2023 - Present',
       location: 'Remote',
       type: 'Full-time',
-      companySize: '50-100 employees',
-      industry: 'DeFi & Blockchain Infrastructure',
       description: 'Leading the development of next-generation DeFi protocols with focus on yield optimization and cross-chain interoperability. Architected smart contracts handling over $100M TVL with zero security incidents.',
       achievements: [
         {
@@ -71,8 +69,6 @@ const Experience = () => {
       duration: '2021 - 2023',
       location: 'San Francisco, CA',
       type: 'Full-time',
-      companySize: '100-500 employees',
-      industry: 'Layer 2 Solutions',
       description: 'Developed Layer 2 scaling solutions and consensus mechanisms. Built infrastructure supporting 10,000+ TPS with sub-second finality, revolutionizing blockchain scalability.',
       achievements: [
         {
@@ -112,8 +108,6 @@ const Experience = () => {
       duration: '2020 - 2021',
       location: 'New York, NY',
       type: 'Full-time',
-      companySize: '10-50 employees',
-      industry: 'DeFi Applications',
       description: 'Focused on building secure, gas-optimized smart contracts for various DeFi applications including DEXs, lending protocols, and NFT marketplaces. Pioneered several gas optimization techniques.',
       achievements: [
         {
@@ -153,8 +147,6 @@ const Experience = () => {
       duration: '2019 - 2020',
       location: 'Austin, TX',
       type: 'Full-time',
-      companySize: '500+ employees',
-      industry: 'Financial Technology',
       description: 'Developed robust backend systems for financial applications with focus on security, scalability, and regulatory compliance. Transitioned into blockchain development during this role.',
       achievements: [
         {
@@ -328,16 +320,7 @@ const Experience = () => {
                         </div>
                       </div>
 
-                      <div className="space-y-3 lg:space-y-4">
-                        <div className="p-3 lg:p-4 bg-white/10 backdrop-blur-sm rounded-lg lg:rounded-xl">
-                          <div className="text-xs lg:text-sm font-semibold mb-1">Industry</div>
-                          <div className="text-white/90 text-sm lg:text-base">{experiences[activeExperience].industry}</div>
-                        </div>
-                        <div className="p-3 lg:p-4 bg-white/10 backdrop-blur-sm rounded-lg lg:rounded-xl">
-                          <div className="text-xs lg:text-sm font-semibold mb-1">Company Size</div>
-                          <div className="text-white/90 text-sm lg:text-base">{experiences[activeExperience].companySize}</div>
-                        </div>
-                      </div>
+                     
                     </div>
                   </div>
                   
