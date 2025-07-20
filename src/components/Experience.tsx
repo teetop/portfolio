@@ -54,12 +54,6 @@ const Experience = () => {
         }
       ],
       technologies: ['Solidity', 'Rust', 'Hardhat', 'Chainlink', 'OpenZeppelin', 'Foundry'],
-      responsibilities: [
-        'Architect and develop high-performance DeFi protocols',
-        'Optimize smart contracts for gas efficiency and security',
-        'Lead cross-functional teams in protocol design and implementation',
-        'Conduct security reviews and coordinate external audits'
-      ],
       website: '#',
       gradient: 'from-purple-500 via-pink-500 to-red-500'
     },
@@ -93,12 +87,6 @@ const Experience = () => {
         }
       ],
       technologies: ['Go', 'Rust', 'Solidity', 'Docker', 'Kubernetes', 'gRPC'],
-      responsibilities: [
-        'Design and implement Layer 2 scaling solutions',
-        'Develop consensus mechanisms and network protocols',
-        'Optimize blockchain infrastructure for high throughput',
-        'Collaborate with research teams on protocol improvements'
-      ],
       website: '#',
       gradient: 'from-blue-500 via-cyan-500 to-teal-500'
     },
@@ -132,54 +120,9 @@ const Experience = () => {
         }
       ],
       technologies: ['Solidity', 'Web3.js', 'Truffle', 'OpenZeppelin', 'IPFS', 'React'],
-      responsibilities: [
-        'Develop and deploy secure smart contracts',
-        'Implement gas optimization strategies',
-        'Integrate with external DeFi protocols and oracles',
-        'Conduct thorough testing and security reviews'
-      ],
       website: '#',
       gradient: 'from-green-500 via-emerald-500 to-teal-500'
     },
-    {
-      company: 'Fintech Solutions Inc',
-      position: 'Backend Developer',
-      duration: '2019 - 2020',
-      location: 'Austin, TX',
-      type: 'Full-time',
-      description: 'Developed robust backend systems for financial applications with focus on security, scalability, and regulatory compliance. Transitioned into blockchain development during this role.',
-      achievements: [
-        {
-          icon: <Code2 size={16} />,
-          text: 'Built microservices architecture handling 1M+ daily transactions',
-          impact: '1M+ Transactions'
-        },
-        {
-          icon: <Shield size={16} />,
-          text: 'Implemented security protocols achieving SOC 2 Type II compliance',
-          impact: 'SOC 2 Compliant'
-        },
-        {
-          icon: <TrendingUp size={16} />,
-          text: 'Optimized database queries reducing response times by 70%',
-          impact: '-70% Response Time'
-        },
-        {
-          icon: <Users size={16} />,
-          text: 'Led migration of legacy systems to modern cloud infrastructure',
-          impact: 'Cloud Migration'
-        }
-      ],
-      technologies: ['Java', 'Spring Boot', 'PostgreSQL', 'Redis', 'AWS', 'Docker'],
-      responsibilities: [
-        'Design and implement scalable backend systems',
-        'Ensure compliance with financial regulations',
-        'Optimize database performance and security',
-        'Collaborate with frontend teams on API design'
-      ],
-      website: '#',
-      gradient: 'from-orange-500 via-red-500 to-pink-500'
-    }
   ];
 
   const totalYears = new Date().getFullYear() - 2022;
