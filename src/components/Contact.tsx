@@ -263,26 +263,32 @@ const Contact = () => {
                   Send Message
                 </button>
                 
-                {/* Status Messages */}
-                <div id="form-result" style={{ display: 'none' }}>
-                  {result === "Thank you! Your submission has been received!" && (
-                    <div className="mt-4 p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-green-300 text-center">
-                      ✅ Message sent successfully! I'll get back to you soon.
-                    </div>
-                  )}
-                  {result === "Please wait..." && (
-                    <div className="mt-4 p-4 bg-blue-500/20 border border-blue-500/30 rounded-lg text-blue-300 text-center flex items-center justify-center gap-2">
-                      <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-300"></div>
-                      Sending your message...
-                    </div>
-                  )}
-                 
-                  {(result === "Thank you! Your submission has been received!" || result.toLowerCase().includes("success")) && (
-                    <div className="mt-4 p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-green-300 text-center">
-                      ✅ Message sent successfully! I'll get back to you soon.
-                    </div>
-                  )}
-                </div>
+              {/* Status Messages */}
+{result && (
+  <div id="form-result" className="mt-4">
+    {result === "Please wait..." && (
+      <div className="p-4 bg-blue-500/20 border border-blue-500/30 rounded-lg text-blue-300 text-center flex items-center justify-center gap-2">
+        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-300"></div>
+        Sending your message...
+      </div>
+    )}
+
+    {(result === "Thank you! Your submission has been received!" ||
+      result.toLowerCase().includes("success")) && (
+      <div className="p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-green-300 text-center">
+        ✅ Message sent successfully! I'll get back to you soon.
+      </div>
+    )}
+
+    {/* Add error handling if needed */}
+    {result.toLowerCase().includes("error") && (
+      <div className="p-4 bg-red-500/20 border border-red-500/30 rounded-lg text-red-300 text-center">
+        ❌ Something went wrong. Please try again.
+      </div>
+    )}
+  </div>
+)}
+
               </form>
             </div>
           </div>
