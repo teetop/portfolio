@@ -282,8 +282,6 @@ const Contact = () => {
                     </div>
                   )}
                 </div>
-                  </div>
-                )}
               </form>
             </div>
           </div>
