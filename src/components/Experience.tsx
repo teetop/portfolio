@@ -54,7 +54,7 @@ const Experience = () => {
         }
       ],
       technologies: ['Solidity', 'Rust', 'Hardhat', 'Chainlink', 'OpenZeppelin', 'Foundry'],
-      website: '#',
+      website: 'https://www.mariblock.com/',
       gradient: 'from-purple-500 via-pink-500 to-red-500'
     },
     {
@@ -87,7 +87,7 @@ const Experience = () => {
         }
       ],
       technologies: ['Go', 'Rust', 'Solidity', 'Docker', 'Kubernetes', 'gRPC'],
-      website: '#',
+      website: 'https://www.syncskills.com.au/',
       gradient: 'from-blue-500 via-cyan-500 to-teal-500'
     },
     {
