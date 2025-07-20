@@ -22,8 +22,6 @@ const Experience = () => {
 
     return () => observer.disconnect();
   }, []);
-
-  JAVA SOFTWARE ENGINEER (Hybrid)
   
   const experiences = [
     {
