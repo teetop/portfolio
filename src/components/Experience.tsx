@@ -358,9 +358,11 @@ const Experience = () => {
 
                       
                       <h4 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4 lg:mb-6 flex items-center gap-2">
-                        <Award size={18} className="text-yellow-400 sm:w-5 sm:h-5" />
-                        Key Achievements
+                        <Users size={18} className="text-green-400 sm:w-5 sm:h-5" />
+                        Key Responsibilities
                       </h4>
+                        
+                       
                       <div className="space-y-3 lg:space-y-4">
                         {experiences[activeExperience].achievements.map((achievement, achIndex) => (
                           <div key={achIndex} className="group flex items-start gap-3 lg:gap-4 p-3 lg:p-4 bg-gray-50 dark:bg-white/5 backdrop-blur-sm rounded-lg lg:rounded-xl border border-gray-200 dark:border-white/10 hover:bg-gray-100 dark:hover:bg-white/10 hover:border-gray-300 dark:hover:border-white/20 transition-all duration-300">
@@ -387,10 +389,12 @@ const Experience = () => {
 
                     {/* Responsibilities */}
                     <div>
-                      <h4 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-3 lg:mb-4 flex items-center gap-2">
-                        <Users size={18} className="text-green-400 sm:w-5 sm:h-5" />
-                        Key Responsibilities
+                       <Award size={18} className="text-yellow-400 sm:w-5 sm:h-5" />
+                        Key Achievements
                       </h4>
+
+                      
+                      
                       <ul className="space-y-2 lg:space-y-3">
                         {experiences[activeExperience].responsibilities.map((responsibility, respIndex) => (
                           <li key={respIndex} className="flex items-start gap-2 lg:gap-3 text-gray-600 dark:text-gray-300 text-sm lg:text-base">
