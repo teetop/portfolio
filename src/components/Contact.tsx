@@ -18,7 +18,7 @@ const Contact = () => {
         const name = formData.get('name');
         
         // Create a custom subject
-        const subject = `${name} sent a message from website`;
+        const subject = `Website: message from ${name}`;
         
         // Append the custom subject to the form data
         formData.append('subject', subject);
