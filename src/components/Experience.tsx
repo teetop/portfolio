@@ -31,7 +31,7 @@ const Experience = () => {
       location: 'Remote',
       type: 'Full-time',
       description: 'Leading the development of next-generation DeFi protocols with focus on yield optimization and cross-chain interoperability. Architected smart contracts handling over $100M TVL with zero security incidents.',
-      achievements: [
+      responsibilities: [
         {
           icon: <TrendingUp size={16} />,
           text: 'Designed and deployed yield aggregation protocol achieving 40% higher APY than competitors',
@@ -64,7 +64,7 @@ const Experience = () => {
       location: 'Flagstone, QLD, Australia (Remote)',
       type: 'Full-time',
       description: 'Developed Layer 2 scaling solutions and consensus mechanisms. Built infrastructure supporting 10,000+ TPS with sub-second finality, revolutionizing blockchain scalability.',
-      achievements: [
+      responsibilities: [
         {
           icon: <Zap size={16} />,
           text: 'Implemented optimistic rollup solution reducing transaction costs by 95%',
@@ -97,7 +97,7 @@ const Experience = () => {
       location: 'Lagos, Nigeria',
       type: 'Hybrid',
       description: 'Focused on building secure, gas-optimized smart contracts for various DeFi applications including DEXs, lending protocols, and NFT marketplaces. Pioneered several gas optimization techniques.',
-      achievements: [
+      responsibilities: [
         {
           icon: <Shield size={16} />,
           text: 'Deployed 25+ audited smart contracts with zero security incidents',
@@ -303,7 +303,7 @@ const Experience = () => {
                         
                        
                       <div className="space-y-3 lg:space-y-4">
-                        {experiences[activeExperience].achievements.map((achievement, achIndex) => (
+                        {experiences[activeExperience].responsibilities.map((achievement, achIndex) => (
                           <div key={achIndex} className="group flex items-start gap-3 lg:gap-4 p-3 lg:p-4 bg-gray-50 dark:bg-white/5 backdrop-blur-sm rounded-lg lg:rounded-xl border border-gray-200 dark:border-white/10 hover:bg-gray-100 dark:hover:bg-white/10 hover:border-gray-300 dark:hover:border-white/20 transition-all duration-300">
                             <div className={`bg-gradient-to-r ${experiences[activeExperience].gradient} p-1.5 lg:p-2 rounded-md lg:rounded-lg text-white flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
                               {achievement.icon}
