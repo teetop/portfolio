@@ -244,7 +244,7 @@ const Experience = () => {
                 Work <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">Experience</span>
               </h2>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
-                {totalYears}+ years of building revolutionary blockchain solutions, from smart contracts, ZK proof research, to                       protocol architecture, with a proven track record of delivering secure, scalable, and innovative systems.
+                {totalYears}+ years of building revolutionary blockchain solutions, from smart contracts, ZK proof research, to                       protocol engineering, with a proven track record of delivering secure, scalable, and innovative systems.
               </p>
 
               {/* Quick Stats */}
