@@ -22,6 +22,8 @@ const Experience = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  JAVA SOFTWARE ENGINEER (Hybrid)
   
   const experiences = [
     {
@@ -103,11 +105,11 @@ const Experience = () => {
       gradient: 'from-blue-500 via-cyan-500 to-teal-500'
     },
     {
-      company: 'Web3 Startup',
-      position: 'Smart Contract Developer',
-      duration: '2020 - 2021',
-      location: 'New York, NY',
-      type: 'Full-time',
+      company: 'Boy Boy, Nigeria',
+      position: 'Fullstack Engineer',
+      duration: 'December 2022 – June 2023',
+      location: 'Lagos, Nigeria',
+      type: 'Hybrid',
       description: 'Focused on building secure, gas-optimized smart contracts for various DeFi applications including DEXs, lending protocols, and NFT marketplaces. Pioneered several gas optimization techniques.',
       achievements: [
         {
